@@ -104,7 +104,7 @@
 
       const changePcontent = function () {
         for (let i = 0; i < document.querySelectorAll("div p").length; i++)
-          document.querySelectorAll("div p")[i].innerText = "we";
+          document.querySelectorAll("div p")[i].innerText = "wewewewewew";
       };
       changePcontent();
 
@@ -185,8 +185,14 @@
             Crea una funzione che, al click sul footer, riveli l'URL del link interno come contenuto di un alert()
            */
 
-      const revealFooterLink = function () {};
-
+      const revealFooterLink = function () {
+        const footer = document.querySelector("footer");
+        function clickfooter() {
+          alert("non riesco");
+        }
+        footer.addEventListener("click", clickfooter);
+      };
+      revealFooterLink();
       /* ESERCIZIO 11
             Crea una funzione che crei una tabella nell'elemento con id "tableArea".
             La tabella avrà 5 elementi e questa struttura: immagine, nome prodotto, quantità, prezzo
